@@ -1,22 +1,36 @@
-# JSON_Server_Deployment
+ ### README.md
 
+## Zeraki Sales Agent Dashboard Server
 
+### Project Overview:
+The Zeraki Sales Agent Dashboard Server is built using JSON Server to provide mock REST API functionality for the sales agent dashboard application. This server facilitates the simulation of real-time data updates without the need for a backend server, allowing seamless development and testing of the dashboard features related to school accounts, invoicing, and collections.
 
+### Setup Instructions:
+To set up and run the JSON Server for the Zeraki Sales Agent Dashboard locally, follow these steps:
 
-By utilizing the provided template, you will be able to create your JSON server repository, which can be deployed on render.com
---------------
+1. Clone the repository from the GitHub link provided: [GitHub Repository](https://github.com/Ciamuthama/Zeraki_Api/).
+2. Navigate to the project directory in your terminal.
+3. Install JSON Server globally by running:
 
+```bash
+npm install -g json-server
+```
+4. Start the JSON Server using the provided mock JSON data file:
 
-[![Nice UI](https://img.youtube.com/vi/W9sbA1a2-Ag/0.jpg)](https://www.youtube.com/watch?v=W9sbA1a2-Ag)
+```bash
+json-server --watch db.json --port 3000
+```
+5. Access the server endpoints at `http://localhost:3000`.
 
+### Key Design Decisions:
+1. **Framework**: JSON Server is utilized to create a full mock REST API using simple JSON files, enabling easy development of the sales agent dashboard application.
+2. **Data Simulation**: Mock JSON data is used to mimic real data scenarios and interactions, facilitating front-end development without a live backend environment.
+3. **Server Configuration**: The server is configured to watch the `db.json` file and expose RESTful endpoints for CRUD operations on the mock school, invoice, and collection data.
 
-In this video, I have covered three simple steps to quickly deploy your **JSON Server** on render.com.
+### Additional Information:
+For access to the complete JSON Server repository and configurations, refer to the provided GitHub link. 
 
-Three Simple Steps:
+For any inquiries or support regarding the server setup and usage, please contact the project maintainers.
 
-1. Create a repository from the template.
-2. Add your own data.
-3. Deploy it.
-
-Believe me, this is the **easiest way** to deploy your JSON server on render.com. Deploy your db.json file without writing a **single line of code**.
-
+---
+You can further customize this README to include specific details or instructions relevant to your project's JSON Server setup. Best of luck with your server development!  
